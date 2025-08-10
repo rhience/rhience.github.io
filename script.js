@@ -1,1 +1,0 @@
-// Final optimized JS with animations, theme toggle, testimonials, etc.
