@@ -1,6 +1,6 @@
 # rhience.github.io
 
-A fast, hiring‑ready portfolio— Customer Service Representative & General Virtual Assistant.
+A fast, hiring‑ready portfolio for **Rhience R. Asuncion** — Customer Service Representative & General Virtual Assistant.
 
 ## Deploy (GitHub Pages)
 
