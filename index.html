@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hire Rhience Asuncion — Virtual Assistant & Customer Support Specialist</title>
-    <meta name="description" content="Hire a reliable Virtual Assistant & Customer Support Specialist who reduces workload, clears backlogs, and elevates customer experiences. 6+ years multichannel support & e-commerce expertise." />
+    <title>Hire Rhience Asuncion — AI-Powered Virtual Assistant & Customer Support Specialist</title>
+    <meta name="description" content="Hire a reliable Virtual Assistant & Customer Support Specialist with AI skills who reduces workload, clears backlogs, and elevates customer experiences. 6+ years multichannel support & e-commerce expertise." />
     <link rel="icon" type="image/png" href="assets/favicon.png">
 
     <!-- Tailwind Play CDN -->
@@ -13,6 +13,13 @@
       tailwind.config = {
         theme: {
           extend: {
+            colors: {
+              brand: {
+                DEFAULT: '#1D4ED8', // Blue accent
+                light: '#3B82F6',
+                dark: '#1E40AF'
+              }
+            },
             fontFamily: {
               sans: ['ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Inter','Arial','Noto Sans','sans-serif']
             }
@@ -22,8 +29,9 @@
     </script>
     <style>
       html { scroll-behavior: smooth; }
-      [data-animate] { opacity: 0; transform: translateY(8px); transition: all .6s ease; }
-      [data-animate].in { opacity: 1; transform: none; }
+      [data-animate] { opacity: 0; transform: translateY(20px); transition: all .8s ease; }
+      [data-animate].in { opacity: 1; transform: translateY(0); }
+      .parallax { transform: translateZ(0); will-change: transform; }
     </style>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
@@ -31,12 +39,16 @@
           entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); }}); 
         },{ threshold: .15 });
         document.querySelectorAll('[data-animate]').forEach(el=>obs.observe(el));
+
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.onclick = () => mobileMenu.classList.toggle('hidden');
       });
     </script>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Hire Rhience — Your Next Virtual Assistant" />
-    <meta property="og:description" content="Reduce workload, clear backlogs, improve customer satisfaction. Hire a proven VA & Support Specialist." />
+    <meta property="og:title" content="Hire Rhience — Your AI-Powered Virtual Assistant" />
+    <meta property="og:description" content="Reduce workload, clear backlogs, improve customer satisfaction. Hire a proven AI-Powered VA & Support Specialist." />
     <meta property="og:image" content="assets/profile.jpg" />
 
     <!-- Schema -->
@@ -46,7 +58,7 @@
       "@type":"Person",
       "name":"Rhience R. Asuncion",
       "image":"assets/profile.jpg",
-      "jobTitle":"Virtual Assistant & Customer Support Specialist",
+      "jobTitle":"AI-Powered Virtual Assistant & Customer Support Specialist",
       "email":"mailto:asuncionrhience@gmail.com",
       "url":"https://rhience.github.io",
       "sameAs":["https://www.linkedin.com/in/rhience-a-81691a18b"]
@@ -64,12 +76,12 @@
           <span class="font-semibold">Hire Rhience</span>
         </a>
         <nav class="hidden md:flex gap-6 text-sm">
-          <a href="#about" class="hover:text-gray-700">About</a>
-          <a href="#wins" class="hover:text-gray-700">Results</a>
-          <a href="#experience" class="hover:text-gray-700">Experience</a>
-          <a href="#skills" class="hover:text-gray-700">Skills</a>
-          <a href="#contact" class="hover:text-gray-700">Hire Me</a>
-          <a href="assets/resume.pdf" class="px-3 py-1.5 rounded-lg bg-gray-900 text-white hover:bg-black">Download CV</a>
+          <a href="#about" class="hover:text-brand">About</a>
+          <a href="#wins" class="hover:text-brand">Results</a>
+          <a href="#experience" class="hover:text-brand">Experience</a>
+          <a href="#skills" class="hover:text-brand">Skills</a>
+          <a href="#contact" class="hover:text-brand">Hire Me</a>
+          <a href="assets/resume.pdf" class="px-3 py-1.5 rounded-lg bg-brand text-white hover:bg-brand-dark">Download CV</a>
         </nav>
         <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor">
@@ -84,52 +96,39 @@
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Hire Me</a>
-          <a href="assets/resume.pdf" class="px-3 py-2 rounded-lg bg-gray-900 text-white text-center">Download CV</a>
+          <a href="assets/resume.pdf" class="px-3 py-2 rounded-lg bg-brand text-white text-center">Download CV</a>
         </div>
       </div>
-      <script>
-        document.getElementById('menuBtn').onclick = () =>
-          document.getElementById('mobileMenu').classList.toggle('hidden');
-      </script>
     </header>
 
     <!-- HERO / FUNNEL HOOK -->
-    <section class="relative overflow-hidden">
-      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center py-16">
-
-        <div data-animate>
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-            Your Next Reliable Virtual Assistant & Customer Support Specialist
+    <section class="relative overflow-hidden bg-white">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center py-20">
+        <div data-animate class="parallax">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+            Your Next AI-Powered Virtual Assistant & Customer Support Specialist
           </h1>
 
           <p class="mt-4 text-lg text-gray-600">
-            Overwhelmed with customer messages, repetitive tasks, or operational chaos?
-            I help business owners regain control by clearing inboxes, improving systems,
-            and giving customers the experience they deserve — all while freeing up your time.
+            Overwhelmed with customer messages, repetitive tasks, or operational chaos? I help business owners regain control by clearing inboxes, improving systems, and giving customers the experience they deserve — all while freeing up your time.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contact" class="px-5 py-3 rounded-xl bg-gray-900 text-white hover:bg-black">
-              Book a Free Discovery Call
-            </a>
-            <a href="assets/resume.pdf" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">
-              Download CV
-            </a>
-            <a href="mailto:asuncionrhience@gmail.com" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">
-              Email Me
-            </a>
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-brand text-white hover:bg-brand-dark">Book a Free Discovery Call</a>
+            <a href="assets/resume.pdf" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">Download CV</a>
+            <a href="mailto:asuncionrhience@gmail.com" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">Email Me</a>
           </div>
 
           <dl class="mt-8 grid grid-cols-3 gap-4 text-center">
-            <div class="bg-white rounded-xl p-4 border" data-animate>
+            <div class="bg-white rounded-xl p-4 border shadow-sm" data-animate>
               <dt class="text-xs uppercase text-gray-500">Experience</dt>
               <dd class="text-2xl font-bold">6+ Years</dd>
             </div>
-            <div class="bg-white rounded-xl p-4 border" data-animate>
+            <div class="bg-white rounded-xl p-4 border shadow-sm" data-animate>
               <dt class="text-xs uppercase text-gray-500">Support</dt>
               <dd class="text-2xl font-bold">Phone · Chat · Email</dd>
             </div>
-            <div class="bg-white rounded-xl p-4 border" data-animate>
+            <div class="bg-white rounded-xl p-4 border shadow-sm" data-animate>
               <dt class="text-xs uppercase text-gray-500">Availability</dt>
               <dd class="text-2xl font-bold">ET Friendly</dd>
             </div>
@@ -141,7 +140,6 @@
             <img src="assets/profile.jpg" alt="Rhience Asuncion" class="w-full h-full object-cover">
           </div>
         </div>
-
       </div>
     </section>
 
@@ -165,8 +163,7 @@
         <p class="text-gray-600 mt-2">Real businesses. Real improvements. Fast impact.</p>
 
         <div class="mt-8 grid md:grid-cols-3 gap-6">
-
-          <div class="p-6 rounded-2xl border" data-animate>
+          <div class="p-6 rounded-2xl border shadow-sm" data-animate>
             <div class="text-4xl font-extrabold">↓ 40%</div>
             <p class="mt-2 text-sm text-gray-600">
               Eliminated a massive 20,000+ email backlog to 12,000 in six weeks using macros,
@@ -175,7 +172,7 @@
             <span class="inline-block mt-3 text-xs text-gray-500">Intelegencia – NY&C / FTF</span>
           </div>
 
-          <div class="p-6 rounded-2xl border" data-animate>
+          <div class="p-6 rounded-2xl border shadow-sm" data-animate>
             <div class="text-4xl font-extrabold">↑ 30%</div>
             <p class="mt-2 text-sm text-gray-600">
               Boosted Facebook engagement and shares through strategic timing tests and consistent weekly content.
@@ -183,14 +180,13 @@
             <span class="inline-block mt-3 text-xs text-gray-500">Sourced — Marketing</span>
           </div>
 
-          <div class="p-6 rounded-2xl border" data-animate>
+          <div class="p-6 rounded-2xl border shadow-sm" data-animate>
             <div class="text-4xl font-extrabold">FCR Wins</div>
             <p class="mt-2 text-sm text-gray-600">
               Reduced escalations and ensured customers received solutions on the first contact.
             </p>
             <span class="inline-block mt-3 text-xs text-gray-500">Sitel — Macy’s / Staples</span>
           </div>
-
         </div>
       </div>
     </section>
@@ -198,12 +194,10 @@
     <!-- ABOUT -->
     <section id="about" class="py-16">
       <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10 items-start">
-
         <div class="md:col-span-2" data-animate>
           <h2 class="text-3xl font-bold">About Me</h2>
-
           <p class="mt-4 text-gray-700 leading-relaxed">
-            I’m Rhience Asuncion — a Virtual Assistant and Customer Support Specialist dedicated
+            I’m Rhience Asuncion — an AI-Powered Virtual Assistant and Customer Support Specialist dedicated
             to giving business owners time back by managing their systems, customers, and recurring tasks.
             I work independently, communicate clearly, and deliver results immediately.
           </p>
@@ -213,23 +207,25 @@
             <li class="flex gap-2">✅ E-Commerce Order & Support Operations</li>
             <li class="flex gap-2">✅ Inbox, Calendar & Scheduling Management</li>
             <li class="flex gap-2">✅ Social Media Coordination & Scheduling</li>
-            <li class="flex gap-2">✅ Google Workspace & Microsoft 365 Proficiency</li>
-            <li class="flex gap-2">✅ Kartra, Shopify, Trello & Helpdesk Tools</li>
+            <li class="flex gap-2">✅ Google Workspace & Microsoft 365</li>
+            <li class="flex gap-2">✅ Kartra, Shopify, Amazon Seller Central, Zendesk, Gorgias, Freshdesk</li>
+            <li class="flex gap-2">✅ Funnel Building & Project Management (Notion, Monday.com, ClickUp)</li>
+            <li class="flex gap-2">✅ Basic Web Development (HTML, CSS, Tailwind)</li>
+            <li class="flex gap-2">✅ AI Engineering (Prompt Engineering, AI Workflows, Chatbots, AI Tool Integration)</li>
           </ul>
         </div>
 
-        <aside class="bg-white rounded-2xl border p-6" data-animate>
+        <aside class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
           <h3 class="font-semibold">Fast Facts</h3>
           <dl class="mt-4 space-y-3 text-sm">
-            <div class="flex justify-between"><dt class="text-gray-500">Location</dt><dd>Tarlac, PH (ET-Friendly)</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Experience</dt><dd>6+ Years Support</dd></div>
             <div class="flex justify-between"><dt class="text-gray-500">Education</dt><dd>BS in IT</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Industries</dt><dd>Retail & E-commerce</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Availability</dt><dd>Immediate</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Experience</dt><dd>6+ Years Support</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Availability</dt><dd>Immediate — ET Friendly</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Fun Fact</dt><dd>I love One Piece 🏴‍☠️</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Hobby</dt><dd>Basic Web Development</dd></div>
           </dl>
           <a href="https://www.linkedin.com/in/rhience-a-81691a18b" class="mt-4 inline-flex underline text-sm">LinkedIn</a>
         </aside>
-
       </div>
     </section>
 
@@ -237,101 +233,71 @@
     <section id="skills" class="py-16 bg-white border-y">
       <div class="max-w-6xl mx-auto px-4" data-animate>
         <h2 class="text-3xl font-bold">Skills That Move Your Business Forward</h2>
-
+        <p class="mt-3 text-gray-600">
+          A complete toolkit for Virtual Assistance, Customer Support Management, E-commerce Operations, 
+          and entry–to–intermediate AI engineering tasks.
+        </p>
         <div class="mt-6 flex flex-wrap gap-2">
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Customer Support</span>
+
+          <!-- Customer Support & VA Skills -->
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Customer Support (Phone · Chat · Email)</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Conflict Resolution</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Order Tracking</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Inbox & Calendar Management</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Project & Task Management</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">E-commerce Operations</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Calendar & Inbox Mgmt</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Order Tracking & Fulfillment Support</span>
+
+          <!-- Tools -->
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Shopify</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Amazon Seller Central</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Zendesk</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Gorgias</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Freshdesk</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Funnel Building</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Kartra CRM</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Notion</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Monday.com</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">ClickUp</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Google Workspace</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Microsoft 365</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Kartra CRM</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Shopify</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Social Scheduling</span>
+
+          <!-- Content & Branding -->
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Social Media Scheduling</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Basic Graphic Design</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Basic Video Editing</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Basic Web Development (HTML · CSS · Tailwind)</span>
+
+          <!-- AI Engineering Skills -->
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Prompt Engineering</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">AI Automation Workflows</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Chatbot Setup & Optimization</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">AI Tool Integration</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Data Structuring for AI</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Fine-tuning Small Models</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Automation Using Zapier/Make</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">AI-assisted Content Creation</span>
+
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="py-16">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold">Experience That Shows I Can Handle the Job</h2>
-
-        <ol class="mt-8 relative border-l border-gray-200">
-
-          <li class="mb-10 ml-4" data-animate>
-            <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Support Specialist — Intelegencia (NY&Co / FTF)</h3>
-            <p class="text-sm text-gray-600">Nov 2022 – Mar 2024</p>
-            <ul class="mt-2 ml-6 list-disc text-gray-700">
-              <li>Cleared a 20,000+ message backlog using optimized macros & prioritization.</li>
-              <li>Handled escalations across UPS / USPS / FedEx.</li>
-              <li>Protected CSAT with consistent, accurate resolutions.</li>
-            </ul>
-          </li>
-
-          <li class="mb-10 ml-4" data-animate>
-            <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Virtual Assistant — SL DeBarros Law Firm</h3>
-            <p class="text-sm text-gray-600">Oct 2022 – Jan 2023</p>
-            <ul class="mt-2 ml-6 list-disc text-gray-700">
-              <li>Managed calendars, webinars & client follow-ups independently.</li>
-              <li>Delivered accurate scheduling & timely invoicing.</li>
-              <li>Tools: Google Workspace, Kartra.</li>
-            </ul>
-          </li>
-
-          <li class="mb-10 ml-4" data-animate>
-            <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Freelance VA — IenceAssist VA Services</h3>
-            <p class="text-sm text-gray-600">Jun 2022 – Jan 2023</p>
-            <ul class="mt-2 ml-6 list-disc text-gray-700">
-              <li>Edited websites & created marketing materials.</li>
-              <li>Managed client communications & email sends.</li>
-            </ul>
-          </li>
-
-          <li class="mb-10 ml-4" data-animate>
-            <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Customer Service Representative — Sitel</h3>
-            <p class="text-sm text-gray-600">Sep 2017 – Jan 2022</p>
-            <ul class="mt-2 ml-6 list-disc text-gray-700">
-              <li>Resolved phone & chat issues with first-contact resolution focus.</li>
-              <li>Handled returns, replacements & membership concerns.</li>
-            </ul>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-
-    <!-- CONTACT / CTA -->
+    <!-- CONTACT -->
     <section id="contact" class="py-16">
-      <div class="max-w-3xl mx-auto px-4 text-center" data-animate>
-        <h2 class="text-3xl font-bold">Ready to Get Support You Don’t Need to Manage?</h2>
-        <p class="mt-2 text-gray-600">
-          I respond fast, I work independently, and I deliver real results.
-          <br>Now accepting **2 long-term clients** this month.
-        </p>
-
-        <div class="mt-6 flex flex-wrap justify-center gap-4">
-          <a href="mailto:asuncionrhience@gmail.com" class="px-5 py-3 rounded-xl bg-gray-900 text-white hover:bg-black">Email Me</a>
-          <a href="https://www.linkedin.com/in/rhience-a-81691a18b" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">LinkedIn</a>
-          <a href="https://forms.gle/dy9A7XBL1VrHbTQB6" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">Contact Form</a>
-        </div>
+      <div class="max-w-4xl mx-auto px-4" data-animate>
+        <h2 class="text-3xl font-bold text-center">Let’s Get Started</h2>
+        <p class="text-gray-600 text-center mt-2">Available for immediate hire — ET friendly hours.</p>
+        <form action="mailto:asuncionrhience@gmail.com" method="post" class="mt-8 grid gap-4">
+          <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-brand focus:outline-none" required>
+          <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-brand focus:outline-none" required>
+          <textarea name="message" rows="5" placeholder="Tell me about your project" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-brand focus:outline-none" required></textarea>
+          <button type="submit" class="w-full py-3 rounded-xl bg-brand text-white hover:bg-brand-dark transition">Send Message</button>
+        </form>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-10 bg-white border-t">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-600">
-        <p>© <span id="year"></span> Rhience Asuncion. All rights reserved.</p>
-        <a href="assets/resume.pdf" class="underline">Download CV</a>
-      </div>
-      <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+    <footer class="py-8 bg-gray-50 border-t text-center text-sm text-gray-500">
+      © 2025 Rhience R. Asuncion. All rights reserved.
     </footer>
 
   </body>
