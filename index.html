@@ -280,23 +280,34 @@
       </div>
     </section>
 
-   <!-- CONTACT -->
-<section id="contact" class="py-16 bg-white">
+  <!-- CONTACT / FORM SECTION -->
+<section id="contact" class="py-16 bg-gray-50">
   <div class="max-w-4xl mx-auto px-4" data-animate>
-    <h2 class="text-3xl font-bold text-center">Let’s Get Started</h2>
-    <p class="text-gray-600 text-center mt-2">Available for immediate hire — ET friendly hours.</p>
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Let’s Get Started</h2>
+      <p class="text-gray-600 mt-2">Fill out the form below and I’ll get back to you quickly. ET friendly hours.</p>
+    </div>
 
-    <!-- Responsive Google Form Embed -->
-    <div class="mt-8 relative" style="padding-top: 150%;">
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSf_jPMIf8UT6A3-gyPOejWm_XUs3dEtYossA5rBuaKVvTzyTw/viewform?embedded=true" 
-        class="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg border-0"
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0"
-      >
-        Loading…
-      </iframe>
+    <!-- Aesthetic Form Container -->
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+      <!-- Decorative top bar -->
+      <div class="bg-brand-light h-2 w-full"></div>
+
+      <!-- Google Form Embed -->
+      <div class="p-6 md:p-8">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf_jPMIf8UT6A3-gyPOejWm_XUs3dEtYossA5rBuaKVvTzyTw/viewform?embedded=true" 
+          class="w-full h-[1200px] md:h-[1400px] rounded-xl shadow-inner border-0"
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+
+      <!-- Decorative bottom bar -->
+      <div class="bg-brand-dark h-2 w-full"></div>
     </div>
   </div>
 </section>
