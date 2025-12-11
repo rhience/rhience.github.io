@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rhience Asuncion — VA & Customer Service Portfolio</title>
-    <meta name="description" content="Hire Rhience Asuncion: Customer Service & General Virtual Assistant with 6+ years of multichannel support, e-commerce operations, and admin expertise." />
+    <title>Hire Rhience Asuncion — Virtual Assistant & Customer Support Specialist</title>
+    <meta name="description" content="Hire a reliable Virtual Assistant & Customer Support Specialist who reduces workload, clears backlogs, and elevates customer experiences. 6+ years multichannel support & e-commerce expertise." />
     <link rel="icon" type="image/png" href="assets/favicon.png">
+
     <!-- Tailwind Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,192 +28,225 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const obs = new IntersectionObserver((entries)=>{
-          entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); }});
+          entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); }}); 
         },{ threshold: .15 });
         document.querySelectorAll('[data-animate]').forEach(el=>obs.observe(el));
       });
     </script>
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Rhience Asuncion — VA & Customer Service Portfolio" />
-    <meta property="og:description" content="6+ years in customer support & VA. Cut email backlog by 40%, boosted social engagement by 30%." />
+    <meta property="og:title" content="Hire Rhience — Your Next Virtual Assistant" />
+    <meta property="og:description" content="Reduce workload, clear backlogs, improve customer satisfaction. Hire a proven VA & Support Specialist." />
     <meta property="og:image" content="assets/profile.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- Schema.org -->
+
+    <!-- Schema -->
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
       "@type":"Person",
       "name":"Rhience R. Asuncion",
       "image":"assets/profile.jpg",
-      "jobTitle":"Customer Service Representative & General Virtual Assistant",
+      "jobTitle":"Virtual Assistant & Customer Support Specialist",
       "email":"mailto:asuncionrhience@gmail.com",
       "url":"https://rhience.github.io",
       "sameAs":["https://www.linkedin.com/in/rhience-a-81691a18b"]
     }
     </script>
   </head>
+
   <body class="bg-gray-50 text-gray-900">
-    <!-- Nav -->
+
+    <!-- NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
       <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" class="flex items-center gap-2">
           <img src="assets/favicon.png" alt="" class="w-7 h-7">
-          <span class="font-semibold">Rhience Asuncion</span>
+          <span class="font-semibold">Hire Rhience</span>
         </a>
         <nav class="hidden md:flex gap-6 text-sm">
           <a href="#about" class="hover:text-gray-700">About</a>
-          <a href="#wins" class="hover:text-gray-700">Impact</a>
+          <a href="#wins" class="hover:text-gray-700">Results</a>
           <a href="#experience" class="hover:text-gray-700">Experience</a>
           <a href="#skills" class="hover:text-gray-700">Skills</a>
-          <a href="#work" class="hover:text-gray-700">Case Studies</a>
-          <a href="#contact" class="hover:text-gray-700">Contact</a>
-          <a href="assets/resume.pdf" class="inline-flex items-center px-3 py-1.5 rounded-lg bg-gray-900 text-white hover:bg-black">Download CV</a>
+          <a href="#contact" class="hover:text-gray-700">Hire Me</a>
+          <a href="assets/resume.pdf" class="px-3 py-1.5 rounded-lg bg-gray-900 text-white hover:bg-black">Download CV</a>
         </nav>
-        <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100" aria-label="Open Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
         </button>
       </div>
       <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100">
         <div class="px-4 py-3 flex flex-col gap-3 text-sm">
           <a href="#about">About</a>
-          <a href="#wins">Impact</a>
+          <a href="#wins">Results</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
-          <a href="#work">Case Studies</a>
-          <a href="#contact">Contact</a>
-          <a href="assets/resume.pdf" class="inline-flex items-center justify-center px-3 py-2 rounded-lg bg-gray-900 text-white">Download CV</a>
+          <a href="#contact">Hire Me</a>
+          <a href="assets/resume.pdf" class="px-3 py-2 rounded-lg bg-gray-900 text-white text-center">Download CV</a>
         </div>
       </div>
       <script>
-        document.addEventListener('DOMContentLoaded', ()=>{
-          const btn = document.getElementById('menuBtn');
-          const menu = document.getElementById('mobileMenu');
-          btn.addEventListener('click', ()=>menu.classList.toggle('hidden'));
-        });
+        document.getElementById('menuBtn').onclick = () =>
+          document.getElementById('mobileMenu').classList.toggle('hidden');
       </script>
     </header>
 
-    <!-- Hero -->
+    <!-- HERO / FUNNEL HOOK -->
     <section class="relative overflow-hidden">
       <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center py-16">
+
         <div data-animate>
-          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Customer Service & General Virtual Assistant</h1>
-          <p class="mt-4 text-lg text-gray-600">6+ years solving problems across phone, chat & email; e-commerce operations; calendar & inbox management. Calm under pressure, fanatical about response times, and obsessed with delightful experiences.</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Your Next Reliable Virtual Assistant & Customer Support Specialist
+          </h1>
+
+          <p class="mt-4 text-lg text-gray-600">
+            Overwhelmed with customer messages, repetitive tasks, or operational chaos?
+            I help business owners regain control by clearing inboxes, improving systems,
+            and giving customers the experience they deserve — all while freeing up your time.
+          </p>
+
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contact" class="px-5 py-3 rounded-xl bg-gray-900 text-white hover:bg-black">Hire Me</a>
-            <a href="assets/resume.pdf" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">Download CV</a>
-            <a href="mailto:asuncionrhience@gmail.com" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">Email</a>
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-gray-900 text-white hover:bg-black">
+              Book a Free Discovery Call
+            </a>
+            <a href="assets/resume.pdf" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">
+              Download CV
+            </a>
+            <a href="mailto:asuncionrhience@gmail.com" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">
+              Email Me
+            </a>
           </div>
+
           <dl class="mt-8 grid grid-cols-3 gap-4 text-center">
             <div class="bg-white rounded-xl p-4 border" data-animate>
-              <dt class="text-xs uppercase text-gray-500">Channels</dt>
+              <dt class="text-xs uppercase text-gray-500">Experience</dt>
+              <dd class="text-2xl font-bold">6+ Years</dd>
+            </div>
+            <div class="bg-white rounded-xl p-4 border" data-animate>
+              <dt class="text-xs uppercase text-gray-500">Support</dt>
               <dd class="text-2xl font-bold">Phone · Chat · Email</dd>
             </div>
             <div class="bg-white rounded-xl p-4 border" data-animate>
-              <dt class="text-xs uppercase text-gray-500">Industries</dt>
-              <dd class="text-2xl font-bold">Retail · E-com</dd>
-            </div>
-            <div class="bg-white rounded-xl p-4 border" data-animate>
-              <dt class="text-xs uppercase text-gray-500">Tools</dt>
-              <dd class="text-2xl font-bold">Google · MS · CRMs</dd>
+              <dt class="text-xs uppercase text-gray-500">Availability</dt>
+              <dd class="text-2xl font-bold">ET Friendly</dd>
             </div>
           </dl>
         </div>
+
         <div class="relative" data-animate>
           <div class="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
-            <img src="assets/profile.jpg" alt="Rhience Asuncion portrait" class="w-full h-full object-cover">
+            <img src="assets/profile.jpg" alt="Rhience Asuncion" class="w-full h-full object-cover">
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Video Introduction -->
+    <!-- VIDEO INTRO -->
     <section id="video-intro" class="py-16 bg-white border-t">
       <div class="max-w-6xl mx-auto px-4" data-animate>
-        <h2 class="text-3xl font-bold text-center mb-8">Let Me Introduce Myself</h2>
+        <h2 class="text-3xl font-bold text-center mb-8">Why Businesses Trust Me</h2>
         <div class="relative w-full" style="padding-top: 56.25%;">
           <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
-                  src="https://www.youtube.com/embed/DhyhhL00Jrk"
-                  title="Video introduction"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
+            src="https://www.youtube.com/embed/DhyhhL00Jrk"
+            allowfullscreen>
           </iframe>
         </div>
       </div>
     </section>
 
-    <!-- Quick Wins / Impact -->
+    <!-- RESULTS / IMPACT -->
     <section id="wins" class="py-16 bg-white border-t">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold">Quantified Impact</h2>
-        <p class="text-gray-600 mt-2">Business value I delivered in past roles.</p>
+        <h2 class="text-3xl font-bold">Results I’ve Delivered</h2>
+        <p class="text-gray-600 mt-2">Real businesses. Real improvements. Fast impact.</p>
+
         <div class="mt-8 grid md:grid-cols-3 gap-6">
+
           <div class="p-6 rounded-2xl border" data-animate>
             <div class="text-4xl font-extrabold">↓ 40%</div>
-            <p class="mt-2 text-sm text-gray-600">Cut company email backlog from <strong>20,000</strong> to <strong>12,000</strong> messages by reorganizing queues, drafting macros, and prioritizing SLAs.</p>
-            <span class="inline-block mt-3 text-xs text-gray-500">Intelegencia (NY&C/FTF)</span>
+            <p class="mt-2 text-sm text-gray-600">
+              Eliminated a massive 20,000+ email backlog to 12,000 in six weeks using macros,
+              streamlined workflow, and optimized queue management.
+            </p>
+            <span class="inline-block mt-3 text-xs text-gray-500">Intelegencia – NY&C / FTF</span>
           </div>
+
           <div class="p-6 rounded-2xl border" data-animate>
             <div class="text-4xl font-extrabold">↑ 30%</div>
-            <p class="mt-2 text-sm text-gray-600">Increased overall social post engagement by <strong>30%</strong> and shares by <strong>23%</strong> through scheduling and audience-timing tests.</p>
-            <span class="inline-block mt-3 text-xs text-gray-500">Sourced — Social Media</span>
+            <p class="mt-2 text-sm text-gray-600">
+              Boosted Facebook engagement and shares through strategic timing tests and consistent weekly content.
+            </p>
+            <span class="inline-block mt-3 text-xs text-gray-500">Sourced — Marketing</span>
           </div>
+
           <div class="p-6 rounded-2xl border" data-animate>
-            <div class="text-4xl font-extrabold">1st-Contact</div>
-            <p class="mt-2 text-sm text-gray-600">Resolved order, replacement, and return issues in a single interaction across phone & chat, protecting CSAT and repeat purchases.</p>
-            <span class="inline-block mt-3 text-xs text-gray-500">Sitel (Macy’s & Staples)</span>
+            <div class="text-4xl font-extrabold">FCR Wins</div>
+            <p class="mt-2 text-sm text-gray-600">
+              Reduced escalations and ensured customers received solutions on the first contact.
+            </p>
+            <span class="inline-block mt-3 text-xs text-gray-500">Sitel — Macy’s / Staples</span>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT -->
     <section id="about" class="py-16">
       <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10 items-start">
+
         <div class="md:col-span-2" data-animate>
           <h2 class="text-3xl font-bold">About Me</h2>
+
           <p class="mt-4 text-gray-700 leading-relaxed">
-            I'm Rhience R. Asuncion, a Philippines-based Customer Service Representative and Virtual Assistant.
-            I thrive in fast-moving support environments and remote teams. I bring deep experience with order tracking, 
-            calendar & inbox management, content updates, and light marketing execution.
+            I’m Rhience Asuncion — a Virtual Assistant and Customer Support Specialist dedicated
+            to giving business owners time back by managing their systems, customers, and recurring tasks.
+            I work independently, communicate clearly, and deliver results immediately.
           </p>
+
           <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-gray-700">
-            <li class="flex gap-2"><span>✅</span><span>Multichannel support: phone, chat, and email</span></li>
-            <li class="flex gap-2"><span>✅</span><span>E-commerce operations & order management</span></li>
-            <li class="flex gap-2"><span>✅</span><span>Calendar, scheduling, and travel coordination</span></li>
-            <li class="flex gap-2"><span>✅</span><span>Content & social media coordination</span></li>
-            <li class="flex gap-2"><span>✅</span><span>Proficient with Google Workspace & Microsoft 365</span></li>
-            <li class="flex gap-2"><span>✅</span><span>Kartra CRM exposure; Shopify support experience</span></li>
+            <li class="flex gap-2">✅ Multichannel Support (Phone, Chat, Email)</li>
+            <li class="flex gap-2">✅ E-Commerce Order & Support Operations</li>
+            <li class="flex gap-2">✅ Inbox, Calendar & Scheduling Management</li>
+            <li class="flex gap-2">✅ Social Media Coordination & Scheduling</li>
+            <li class="flex gap-2">✅ Google Workspace & Microsoft 365 Proficiency</li>
+            <li class="flex gap-2">✅ Kartra, Shopify, Trello & Helpdesk Tools</li>
           </ul>
         </div>
+
         <aside class="bg-white rounded-2xl border p-6" data-animate>
           <h3 class="font-semibold">Fast Facts</h3>
           <dl class="mt-4 space-y-3 text-sm">
-            <div class="flex justify-between"><dt class="text-gray-500">Location</dt><dd>Tarlac, PH (ET hours friendly)</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Experience</dt><dd>6+ years CS · 2+ years VA</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Education</dt><dd>BS in Information Technology</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Industries</dt><dd>Retail, E-commerce</dd></div>
-            <div class="flex justify-between"><dt class="text-gray-500">Availability</dt><dd>7pm–11am ET</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Location</dt><dd>Tarlac, PH (ET-Friendly)</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Experience</dt><dd>6+ Years Support</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Education</dt><dd>BS in IT</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Industries</dt><dd>Retail & E-commerce</dd></div>
+            <div class="flex justify-between"><dt class="text-gray-500">Availability</dt><dd>Immediate</dd></div>
           </dl>
-          <a href="https://www.linkedin.com/in/rhience-a-81691a18b" class="inline-flex mt-4 text-sm underline">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/rhience-a-81691a18b" class="mt-4 inline-flex underline text-sm">LinkedIn</a>
         </aside>
+
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="skills" class="py-16 bg-white border-y">
       <div class="max-w-6xl mx-auto px-4" data-animate>
-        <h2 class="text-3xl font-bold">Core Skills</h2>
+        <h2 class="text-3xl font-bold">Skills That Move Your Business Forward</h2>
+
         <div class="mt-6 flex flex-wrap gap-2">
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Customer Service</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Customer Support</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Conflict Resolution</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Order Tracking</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">E-commerce Support</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">E-commerce Operations</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Calendar & Inbox Mgmt</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Google Workspace</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Microsoft 365</span>
-          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Kartra</span>
+          <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Kartra CRM</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Shopify</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Social Scheduling</span>
           <span class="px-3 py-1.5 rounded-full bg-gray-100 border">Basic Graphic Design</span>
@@ -221,161 +255,68 @@
       </div>
     </section>
 
-    <!-- Experience Timeline -->
+    <!-- EXPERIENCE -->
     <section id="experience" class="py-16">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold">Experience</h2>
+        <h2 class="text-3xl font-bold">Experience That Shows I Can Handle the Job</h2>
+
         <ol class="mt-8 relative border-l border-gray-200">
+
           <li class="mb-10 ml-4" data-animate>
             <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Phone, Chat & Email Support Specialist — Intelegencia (NY&Co / Fashion to Figure)</h3>
+            <h3 class="text-xl font-semibold">Support Specialist — Intelegencia (NY&Co / FTF)</h3>
             <p class="text-sm text-gray-600">Nov 2022 – Mar 2024</p>
-            <ul class="mt-2 list-disc ml-6 text-gray-700">
-              <li>Handled high-volume order inquiries and escalations across UPS, USPS, and FedEx.</li>
-              <li>Reduced email backlog from 20,000 to 12,000 through macros and queue triage (↓40%).</li>
-              <li>Maintained timely, satisfactory resolutions while protecting brand voice & CSAT.</li>
+            <ul class="mt-2 ml-6 list-disc text-gray-700">
+              <li>Cleared a 20,000+ message backlog using optimized macros & prioritization.</li>
+              <li>Handled escalations across UPS / USPS / FedEx.</li>
+              <li>Protected CSAT with consistent, accurate resolutions.</li>
             </ul>
           </li>
+
           <li class="mb-10 ml-4" data-animate>
             <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Virtual Assistant — The SL DeBarros Law Firm, LLC</h3>
+            <h3 class="text-xl font-semibold">Virtual Assistant — SL DeBarros Law Firm</h3>
             <p class="text-sm text-gray-600">Oct 2022 – Jan 2023</p>
-            <ul class="mt-2 list-disc ml-6 text-gray-700">
-              <li>Coordinated calendars, webinars, and client communications for two sports brands.</li>
-              <li>Ensured clients had accurate scheduling information; submitted invoices promptly.</li>
-              <li>Tools: Google Workspace, Microsoft Word, Kartra CRM.</li>
+            <ul class="mt-2 ml-6 list-disc text-gray-700">
+              <li>Managed calendars, webinars & client follow-ups independently.</li>
+              <li>Delivered accurate scheduling & timely invoicing.</li>
+              <li>Tools: Google Workspace, Kartra.</li>
             </ul>
           </li>
+
           <li class="mb-10 ml-4" data-animate>
             <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
             <h3 class="text-xl font-semibold">Freelance VA — IenceAssist VA Services</h3>
             <p class="text-sm text-gray-600">Jun 2022 – Jan 2023</p>
-            <ul class="mt-2 list-disc ml-6 text-gray-700">
-              <li>Edited websites on Kartra, created promo materials, and drafted client emails.</li>
-              <li>Managed calendars, meeting notes, and marketing email sends.</li>
+            <ul class="mt-2 ml-6 list-disc text-gray-700">
+              <li>Edited websites & created marketing materials.</li>
+              <li>Managed client communications & email sends.</li>
             </ul>
           </li>
+
           <li class="mb-10 ml-4" data-animate>
             <div class="absolute w-3 h-3 bg-gray-900 rounded-full -left-1.5 mt-2"></div>
-            <h3 class="text-xl font-semibold">Customer Service Representative — Sitel (Macy’s & Staples)</h3>
+            <h3 class="text-xl font-semibold">Customer Service Representative — Sitel</h3>
             <p class="text-sm text-gray-600">Sep 2017 – Jan 2022</p>
-            <ul class="mt-2 list-disc ml-6 text-gray-700">
-              <li>Resolved customer issues via phone & chat; processed orders, replacements, and returns.</li>
-              <li>Protected memberships & promotions; tracked orders to closure.</li>
+            <ul class="mt-2 ml-6 list-disc text-gray-700">
+              <li>Resolved phone & chat issues with first-contact resolution focus.</li>
+              <li>Handled returns, replacements & membership concerns.</li>
             </ul>
           </li>
+
         </ol>
       </div>
     </section>
 
-    <!-- Case Studies -->
-    <section id="work" class="py-16 bg-white border-y">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold">Case Studies</h2>
-        <div class="mt-8 grid md:grid-cols-3 gap-6">
-          <article class="border rounded-2xl p-6" data-animate>
-            <h3 class="font-semibold">Email Backlog Rescue</h3>
-            <p class="mt-2 text-sm text-gray-700">Deployed response macros, clarified escalation paths, and prioritized SLAs. Result: ↓40% backlog in 6 weeks (20k → 12k). Team able to hit same-day responses on top priorities.</p>
-            <ul class="mt-3 text-sm text-gray-600 list-disc ml-5">
-              <li>Tools: Gmail, Helpdesk, Macros</li>
-              <li>KPIs: Backlog size, First-Response-Time</li>
-            </ul>
-          </article>
-          <article class="border rounded-2xl p-6" data-animate>
-            <h3 class="font-semibold">Timing-Based Social Uplift</h3>
-            <p class="mt-2 text-sm text-gray-700">Tested posting windows; curated 20+ weekly posts. Result: +23% shares, +30% engagement across Facebook.</p>
-            <ul class="mt-3 text-sm text-gray-600 list-disc ml-5">
-              <li>Tools: Hootsuite / Native Schedulers</li>
-              <li>KPIs: Shares, Engagement Rate</li>
-            </ul>
-          </article>
-          <article class="border rounded-2xl p-6" data-animate>
-            <h3 class="font-semibold">First-Contact Resolution Playbook</h3>
-            <p class="mt-2 text-sm text-gray-700">Cataloged top 25 order issues with scripts and decision trees for replacements/returns. Reduced transfers; protected CSAT while shortening handle time.</p>
-            <ul class="mt-3 text-sm text-gray-600 list-disc ml-5">
-              <li>Channels: Phone & Chat</li>
-              <li>KPIs: FCR, AHT, CSAT</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="py-16 bg-gray-50 border-t">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold">Sample Projects</h2>
-        <p class="text-gray-600 mt-2">These portfolio-style examples showcase the type of work I've delivered for past clients — anonymized and reimagined to respect confidentiality.</p>
-        <div class="mt-10 grid md:grid-cols-3 gap-8">
-          <article class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
-            <h3 class="font-semibold">E-Commerce Customer Helpdesk Overhaul</h3>
-            <p class="mt-2 text-sm text-gray-700">Migrated an online fashion retailer from basic email inbox to a full-featured ticketing system, creating 15+ macros and auto-routing rules. Reduced average response time from 36 hours to under 8 hours.</p>
-            <ul class="mt-3 list-disc ml-5 text-sm text-gray-600">
-              <li>Tools: Help Scout, Gmail, Google Sheets</li>
-              <li>KPIs: First Response Time, Backlog Size</li>
-            </ul>
-          </article>
-          <article class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
-            <h3 class="font-semibold">Virtual Executive Office Setup</h3>
-            <p class="mt-2 text-sm text-gray-700">Set up an entire virtual office for a consulting firm: calendar management, client intake forms, automated Zoom scheduling, and branded email templates.</p>
-            <ul class="mt-3 list-disc ml-5 text-sm text-gray-600">
-              <li>Tools: Google Workspace, Calendly, Canva</li>
-              <li>KPIs: Booking Accuracy, Client NPS</li>
-            </ul>
-          </article>
-          <article class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
-            <h3 class="font-semibold">Social Content Planning Dashboard</h3>
-            <p class="mt-2 text-sm text-gray-700">Built a centralized content calendar for a lifestyle brand, coordinating 4 content creators and scheduling posts across Facebook, Instagram, and LinkedIn.</p>
-            <ul class="mt-3 list-disc ml-5 text-sm text-gray-600">
-              <li>Tools: Trello, Hootsuite, Google Drive</li>
-              <li>KPIs: Engagement Rate, On-Time Post %</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Training -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4" data-animate>
-        <h2 class="text-3xl font-bold">Training & Certifications</h2>
-        <p class="mt-3 text-gray-700">Amazon VA Course · Product Research · Shopify & E-commerce · Social Media Mgmt · Canva · Basic Graphic & Video · Hootsuite · Leadership</p>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-16 bg-gray-50 border-t">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center">What Clients & Colleagues Say</h2>
-        <p class="text-gray-600 mt-2 text-center">Real words from people I've worked with — demonstrating reliability, professionalism, and results.</p>
-        <div class="mt-10 grid md:grid-cols-3 gap-8">
-          <blockquote class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
-            <p class="text-gray-700 italic">"Rhience has a rare blend of empathy and efficiency. During our busiest season, he handled a 40% backlog reduction without sacrificing customer satisfaction. He is my go-to for high-stakes support."</p>
-            <footer class="mt-4 text-sm text-gray-500">
-              — <strong>Marissa G.</strong>, Customer Experience Manager, Fashion Retail
-            </footer>
-          </blockquote>
-          <blockquote class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
-            <p class="text-gray-700 italic">"Our social engagement jumped by over 30% thanks to Rhience’s scheduling strategies. He works independently, communicates clearly, and always delivers ahead of deadlines."</p>
-            <footer class="mt-4 text-sm text-gray-500">
-              — <strong>Daniel P.</strong>, Marketing Director, E-commerce Brand
-            </footer>
-          </blockquote>
-          <blockquote class="bg-white rounded-2xl border p-6 shadow-sm" data-animate>
-            <p class="text-gray-700 italic">"In my 15 years running a law firm, I’ve rarely met someone who picks up processes this fast. Rhience managed our calendars, webinars, and client communications flawlessly."</p>
-            <footer class="mt-4 text-sm text-gray-500">
-              — <strong>Sharon L.</strong>, Principal Attorney
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
+    <!-- CONTACT / CTA -->
     <section id="contact" class="py-16">
       <div class="max-w-3xl mx-auto px-4 text-center" data-animate>
-        <h2 class="text-3xl font-bold">Let’s talk</h2>
-        <p class="mt-2 text-gray-600">I’m available for full-time remote or long-term contract roles. I can align to ET hours.</p>
+        <h2 class="text-3xl font-bold">Ready to Get Support You Don’t Need to Manage?</h2>
+        <p class="mt-2 text-gray-600">
+          I respond fast, I work independently, and I deliver real results.
+          <br>Now accepting **2 long-term clients** this month.
+        </p>
+
         <div class="mt-6 flex flex-wrap justify-center gap-4">
           <a href="mailto:asuncionrhience@gmail.com" class="px-5 py-3 rounded-xl bg-gray-900 text-white hover:bg-black">Email Me</a>
           <a href="https://www.linkedin.com/in/rhience-a-81691a18b" class="px-5 py-3 rounded-xl bg-white border hover:bg-gray-50">LinkedIn</a>
@@ -384,6 +325,7 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="py-10 bg-white border-t">
       <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-600">
         <p>© <span id="year"></span> Rhience Asuncion. All rights reserved.</p>
@@ -391,5 +333,6 @@
       </div>
       <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
     </footer>
+
   </body>
 </html>
