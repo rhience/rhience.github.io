@@ -491,26 +491,40 @@
   </script>
 </section>
 
-  
-  
+<!-- CONTACT SECTION with HUBSPOT FORM & CALENDLY -->
+<section id="contact" class="py-16 bg-skybg border-t">
+  <div class="max-w-4xl mx-auto px-4" data-animate>
+    <h2 class="text-3xl md:text-4xl font-bold text-center">Hire Me</h2>
+    <p class="mt-2 text-gray-700 text-center text-lg">Let's discuss how I can help your business save time and scale faster.</p>
 
-<!-- CONTACT SECTION with GOOGLE FORM & CALENDLY -->
-  <section id="contact" class="py-16 bg-skybg border-t">
-    <div class="max-w-4xl mx-auto px-4" data-animate>
-      <h2 class="text-3xl md:text-4xl font-bold text-center">Hire Me</h2>
-      <p class="mt-2 text-gray-700 text-center text-lg">Let's discuss how I can help your business save time and scale faster.</p>
+    <div class="mt-10 grid md:grid-cols-2 gap-8">
 
-      <div class="mt-10 grid md:grid-cols-2 gap-8">
-        <!-- Google Form Embed -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_jPMIf8UT6A3-gyPOejWm_XUs3dEtYossA5rBuaKVvTzyTw/viewform?usp=header" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" class="rounded-xl shadow-lg"></iframe>
+      <!-- HubSpot Form Embed -->
+      <div class="rounded-xl shadow-lg p-4 bg-white">
+        <div id="hubspot-form"></div>
 
-        <!-- Calendly Embed -->
-        <div class="rounded-xl shadow-lg p-4 bg-white">
-          <iframe src="https://calendly.com/asuncionrhience/30min" width="100%" height="600" frameborder="0"></iframe>
-        </div>
+        <!-- HubSpot Embed Script -->
+        <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na2",
+            portalId: "244587717",
+            formId: "1e11f204-2801-490e-9a3f-72b8ddf04084",
+            target: "#hubspot-form"
+          });
+        </script>
       </div>
+
+      <!-- Calendly Embed -->
+      <div class="rounded-xl shadow-lg p-4 bg-white">
+        <iframe src="https://calendly.com/asuncionrhience/30min" width="100%" height="600" frameborder="0"></iframe>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+  
+  
 
   <!-- FOOTER -->
   <footer class="py-6 bg-gray-100 border-t text-center text-sm text-gray-500">
