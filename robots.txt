@@ -1,0 +1,8 @@
+# Allow all crawlers
+User-agent: *
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /scripts/
+
+# Sitemap location
+Sitemap: https://rhience.github.io/sitemap.xml
