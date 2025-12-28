@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+# Block unnecessary system files
+Disallow: /assets/temp/
+Disallow: /.git/
+
+# Crawl delay (safe for shared hosting)
+Crawl-delay: 5
+
+# Sitemap location
+Sitemap: https://rhience.github.io/sitemap.xml
