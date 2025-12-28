@@ -1,6 +1,18 @@
 User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 # Block unnecessary system files
 Disallow: /assets/temp/
 Disallow: /.git/
@@ -10,3 +22,4 @@ Crawl-delay: 5
 
 # Sitemap location
 Sitemap: https://rhience.github.io/sitemap.xml
+
